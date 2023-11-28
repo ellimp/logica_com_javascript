@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html langue="pt-br">
+    <head>
+        <meta charset="UTF-18">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ESTOQUE MÉDIO</title>
+    </head>
+    <body>
+        <script>
+            //Declaração de variáveis/constantes: var | let | const
+            var quantmin, quantmax, codig, descr, m;
+
+            //Entrada
+            //Toda leitura de prompt é do tipo string (texto)
+            codig=prompt('Informe o código do produto: ')
+            descr=prompt('Informe a descrição do produto: ')
+            //Necessária a conexão de string para Float
+            quantmin=parseFloat(prompt('Informe a quantidade miníma: '))
+            quantmax=parseFloat(prompt('Informe a quantidade maxíma: '))
+
+            //Processamento
+            m = (quantmin+quantmax)/2
+
+            //Saída
+            document.write('Código: ',codig)
+            document.write('Descrição: ',descr)
+            document.write('Estoque Médio: ',m)
+            
+           </script>
+    </body>
+
+</html>

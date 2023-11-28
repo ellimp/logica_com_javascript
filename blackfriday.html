@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>BLACK FRIDAY!</title>
+    </head>
+    <body>
+    
+        <script>
+            // Declaração de variáveis/constantes: var | let | const 
+            var preco, porcentagem, pcomp, nome
+
+            //Entrada
+            //Toda leitura de prompt é do tipo string (texto)
+            nome=prompt('Informe o nome do cliente: ')
+            //Necessária a conexão de string para Float
+            preco=parseFloat(prompt('Informe o preço do produto: '))
+            porcentagem=parseFloat(prompt('Desconto do produto: ')) 
+
+            //Processamento
+            pcomp = preco - (preco * (porcentagem/100))
+
+            //Saída
+            document.write('Preço com desconto: ',pcomp)
+
+
+        </script>
+    </body>
+</html>

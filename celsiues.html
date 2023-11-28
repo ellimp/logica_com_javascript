@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CELSIUS</title>
+</head>
+<body>
+    <script>
+        //Declaração das variáveis 
+        var usuario
+        let kelvin, celsius, fahrenheit
+
+        //Entrada
+        usuario=prompt('Informe o usuário: ')
+        celsius=parseFloat(prompt('Informe a temperatura em Celsius: '))
+
+        //Processamento
+        fahrenheit = (celsius * 9/5)+32
+        kelvin = celsius + 273.15
+
+        //Saída
+        document.write('<p>Temperatura em Celsius' + celsius + '</p>')
+        document.write('<p>Temperatura em Fahrenheit: ' + fahrenheit + '</p>')
+        document.write('<p>Temperatura em Kelvin: ' + kelvin +'</p>')
+
+    </script>
+    
+</body>
+</html>
