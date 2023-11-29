@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEMPERATURA</title>
+</head>
+<body>
+    <script>
+        var temperatura, kelvin, fahenreit
+        //Entrada
+        temperatura=parseFloat(prompt('Informe a temperatura em °C: '))
+
+        //Processamento
+        kelvin = temperatura+273.15
+        fahenreit = (temperatura * 9/5)+32
+
+        if (temperatura <= 10){
+            document.write('A temperatura está fria!')
+        }
+        
+        if (temperatura >=40){
+            document.write('Está quente!')
+        }
+        document.write('<p>A temperatura em farenheit é: ', fahenreit, '</p>')
+        document.write('<p>A temperatura em kelvin é: ', kelvin, '</p')
+
+    </script>
+    
+</body>
+</html>
