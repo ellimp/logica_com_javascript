@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TORNEIO</title>
+</head>
+<body>
+    <script>
+        var pontuacaoTA, pontuacaoTB
+
+        //Entrada
+        pontuacaoTA=parseFloat(prompt("informe  a pontuação do Time A:"))
+        pontuacaoTB=parseFloat(prompt("Informe a pontuação do Time B: "))
+
+        //Processamento
+        if (pontuacaoTA==pontuacaoTB){
+            //Saída
+            document.write("Empate!");
+        }
+
+        if (pontuacaoTA>pontuacaoTB){
+            //Saída
+            document.write("Vitória do Time A!");
+        }
+
+        if (pontuacaoTA<pontuacaoTB){
+            //Saída
+            document.write("Vitória do Time B!");
+        }
+
+    </script>
+</body>
+</html>
