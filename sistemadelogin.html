@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SISTEMA DE LOGINS</title>
+</head>
+<body>
+    <script>
+        let usuario
+        var senha
+
+        //Entrada
+        usuario=parseFloat(prompt("Informe seu nome de usuário:"))
+        senha=parseFloat(prompt("Informe sua senha:"))
+
+        //Processamento
+        if(usuario=="admin" && senha=="1234"){
+            //Saída
+            document.write("Olá Administrador, bem-vindo ao Sistema!");
+        }else{
+            //Saída
+            document.write("Usuário e/ou Senha incorretos.");
+        }
+    </script>
+</body>
+</html>
