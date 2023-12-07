@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PARES E IMPARES</title>
+</head>
+<body>
+    <script>
+        let cont, numero, contp = 0, conti = 0;
+
+        //Repetidor
+        for (contador = 1; contador <= 10; contador++) {
+            //Entrada
+            numero=parseInt(prompt("Informe o número desejado:"));
+            document.write(numero + "<br>");
+
+        
+
+            if ( numero % 2 == 0) {
+                contp++;
+            } else {
+                conti++;
+            }
+        }
+
+            //Saída
+            document.write("Quantidade de Números Pares:"+ contp + "<br>");
+            document.write("Quantidade de Números Impares:"+ conti + "<br>");
+        
+    </script>
+</body>
+</html>
